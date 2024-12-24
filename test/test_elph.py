@@ -8,13 +8,13 @@ import torch
 from torch.utils.data import DataLoader
 import scipy.sparse as ssp
 
-from src.runners.train import train_elph
-from src.runners.inference import get_elph_preds
-from src.runners.run import run
-from test_params import OPT, setup_seed
-from src.models.elph import ELPH, LinkPredictor
-from src.utils import ROOT_DIR, select_embedding
-from src.datasets.elph import HashDataset
+from subgraph_sketching.runners.train import train_elph
+from subgraph_sketching.runners.inference import get_elph_preds
+from subgraph_sketching.runners.run import run
+from .test_params import OPT, setup_seed
+from subgraph_sketching.models.elph import ELPH, LinkPredictor
+from subgraph_sketching.utils import ROOT_DIR, select_embedding
+from subgraph_sketching.datasets.elph import HashDataset
 
 
 class ELPHTests(unittest.TestCase):

@@ -12,10 +12,10 @@ from torch_geometric.utils import to_undirected, is_undirected, negative_samplin
 from ogb.linkproppred import PygLinkPropPredDataset
 import networkx as nx
 
-from src.data import get_data, get_ogb_train_negs, make_obg_supervision_edges, get_ogb_data, get_loaders, \
+from subgraph_sketching.data import get_data, get_ogb_train_negs, make_obg_supervision_edges, get_ogb_data, get_loaders, \
     sample_hard_negatives
-from src.utils import ROOT_DIR, get_pos_neg_edges
-from test_params import OPT
+from subgraph_sketching.utils import ROOT_DIR, get_pos_neg_edges
+from .test_params import OPT
 
 
 class DataTests(unittest.TestCase):

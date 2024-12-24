@@ -11,13 +11,13 @@ from torch.utils.data import DataLoader
 import torch
 import scipy.sparse as ssp
 
-from src.runners.inference import get_buddy_preds
-from src.runners.run import run
-from src.runners.train import train_buddy
-from test_params import OPT, setup_seed
-from src.models.elph import BUDDY
-from src.datasets.elph import get_src_dst_degree
-from src.data import get_data, get_hashed_train_val_test_datasets
+from subgraph_sketching.runners.inference import get_buddy_preds
+from subgraph_sketching.runners.run import run
+from subgraph_sketching.runners.train import train_buddy
+from .test_params import OPT, setup_seed
+from subgraph_sketching.models.elph import BUDDY
+from subgraph_sketching.datasets.elph import get_src_dst_degree
+from subgraph_sketching.data import get_data, get_hashed_train_val_test_datasets
 
 class BUDDYTests(unittest.TestCase):
     def setUp(self):

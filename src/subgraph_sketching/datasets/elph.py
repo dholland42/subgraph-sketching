@@ -13,9 +13,9 @@ import scipy.sparse as ssp
 import torch_sparse
 from torch_geometric.nn.conv.gcn_conv import gcn_norm
 
-from src.heuristics import RA
-from src.utils import ROOT_DIR, get_src_dst_degree, get_pos_neg_edges, get_same_source_negs
-from src.hashing import ElphHashes
+from subgraph_sketching.heuristics import RA
+from subgraph_sketching.utils import ROOT_DIR, get_src_dst_degree, get_pos_neg_edges, get_same_source_negs
+from subgraph_sketching.hashing import ElphHashes
 
 
 class HashDataset(Dataset):

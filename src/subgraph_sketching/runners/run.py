@@ -22,13 +22,13 @@ from scipy.sparse import SparseEfficiencyWarning
 
 warnings.filterwarnings("ignore", category=SparseEfficiencyWarning)
 
-from src.data import get_data, get_loaders
-from src.models.elph import ELPH, BUDDY
-from src.models.seal import SEALDGCNN, SEALGCN, SEALGIN, SEALSAGE
-from src.utils import ROOT_DIR, print_model_params, select_embedding, str2bool
-from src.wandb_setup import initialise_wandb
-from src.runners.train import get_train_func
-from src.runners.inference import test
+from subgraph_sketching.data import get_data, get_loaders
+from subgraph_sketching.models.elph import ELPH, BUDDY
+from subgraph_sketching.models.seal import SEALDGCNN, SEALGCN, SEALGIN, SEALSAGE
+from subgraph_sketching.utils import ROOT_DIR, print_model_params, select_embedding, str2bool
+from subgraph_sketching.wandb_setup import initialise_wandb
+from subgraph_sketching.runners.train import get_train_func
+from subgraph_sketching.runners.inference import test
 
 def print_results_list(results_list):
     for idx, res in enumerate(results_list):

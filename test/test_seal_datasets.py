@@ -10,11 +10,11 @@ from torch import tensor
 import scipy.sparse as ssp
 from torch_geometric.data import Data
 
-from src.datasets.seal import SEALDataset, SEALDynamicDataset, k_hop_subgraph, \
+from subgraph_sketching.datasets.seal import SEALDataset, SEALDynamicDataset, k_hop_subgraph, \
     construct_pyg_graph
-from src.data import get_data
-from test_params import OPT
-from src.utils import get_src_dst_degree, get_pos_neg_edges
+from subgraph_sketching.data import get_data
+from .test_params import OPT
+from subgraph_sketching.utils import get_src_dst_degree, get_pos_neg_edges
 
 
 class SEALDatasetTests(unittest.TestCase):

@@ -12,8 +12,8 @@ from torch_geometric.nn import GCNConv
 from torch_geometric.nn.conv.gcn_conv import gcn_norm
 from torch_geometric.utils import add_self_loops
 
-from src.models.gnn import SIGN, SIGNEmbedding
-from src.hashing import ElphHashes
+from subgraph_sketching.models.gnn import SIGN, SIGNEmbedding
+from subgraph_sketching.hashing import ElphHashes
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.WARN)

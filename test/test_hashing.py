@@ -12,9 +12,9 @@ import scipy.sparse as ssp
 import torch
 from datasketch import MinHash, HyperLogLogPlusPlus
 
-from src.hashing import ElphHashes, LABEL_LOOKUP
-from src.datasets.seal import neighbors
-from test_params import OPT, setup_seed
+from subgraph_sketching.hashing import ElphHashes, LABEL_LOOKUP
+from subgraph_sketching.datasets.seal import neighbors
+from .test_params import OPT, setup_seed
 
 
 class HashingTests(unittest.TestCase):

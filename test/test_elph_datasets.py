@@ -11,10 +11,10 @@ from torch.utils.data import DataLoader
 from torch_geometric.utils.random import barabasi_albert_graph
 import scipy.sparse as ssp
 
-from src.datasets.elph import HashDataset, make_train_eval_data
-from test_params import OPT
-from src.utils import ROOT_DIR, get_same_source_negs
-from src.hashing import ElphHashes
+from subgraph_sketching.datasets.elph import HashDataset, make_train_eval_data
+from .test_params import OPT
+from subgraph_sketching.utils import ROOT_DIR, get_same_source_negs
+from subgraph_sketching.hashing import ElphHashes
 
 
 class ELPHDatasetTests(unittest.TestCase):

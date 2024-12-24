@@ -22,10 +22,10 @@ from torch_geometric.utils.num_nodes import maybe_num_nodes
 from torch_geometric.loader import DataLoader as pygDataLoader
 import wandb
 
-from src.utils import ROOT_DIR, get_same_source_negs, neighbors
-from src.lcc import get_largest_connected_component, remap_edges, get_node_mapper
-from src.datasets.seal import get_train_val_test_datasets
-from src.datasets.elph import get_hashed_train_val_test_datasets, make_train_eval_data
+from subgraph_sketching.utils import ROOT_DIR, get_same_source_negs, neighbors
+from subgraph_sketching.lcc import get_largest_connected_component, remap_edges, get_node_mapper
+from subgraph_sketching.datasets.seal import get_train_val_test_datasets
+from subgraph_sketching.datasets.elph import get_hashed_train_val_test_datasets, make_train_eval_data
 
 
 def get_loaders(args, dataset, splits, directed):

@@ -15,7 +15,7 @@ from torch import tensor
 import scipy.sparse as ssp
 import numpy as np
 
-from src.heuristics import AA, PPR, CN, RA
+from subgraph_sketching.heuristics import AA, PPR, CN, RA
 
 
 class HeuristicTests(unittest.TestCase):
